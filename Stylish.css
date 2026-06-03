@@ -1,0 +1,354 @@
+ul {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+li{
+    list-style: circle;
+}
+.list {
+    list-style: disc;
+}
+#msg {
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.6;
+    align-self: center;
+}
+:root {
+    --black: #0B0B12;
+    --purple: #f7f0fd;    
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--fontColor);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn {
+    position: fixed;
+    top: 100px;
+    right: 150px;
+    height: 90px;
+    width: 120px;
+    background-color:#a83dff;
+    cursor: pointer;
+    font-size: x-large;
+    transition: 0.25s ease; 
+     color: #fefdfe;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 999px;
+  display: inline-block;
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+.light-theme {
+  --bg: var(--purple);
+  --fontColor: var(--black);
+  --btnBg: var(--purple);
+  --btnFontColor: var(--black);
+}
+
+.dark-theme {
+  --bg: var(--black);
+  --fontColor: var(--purple);
+  --btnBg: var(--black);
+  --btnFontColor: var(--purple);
+}
+html { scroll-behavior: smooth; }
+/* Base link colour */
+a {
+  color: #9136db;   /* light purple‑pink */
+  text-decoration: none;
+}
+
+/* Hover effect */
+a:hover {
+  color: #f1cffd;   /* brighter pastel pink‑purple */
+}
+
+/* Visited links */
+a:visited {
+  color: #da7ff8;   /* slightly deeper shade */
+}
+
+/* Active (when clicking) */
+a:active {
+  color: #e0cbf2;   /* soft pink flash */
+}
+
+/* Wrap text */
+p {
+  white-space: pre-wrap;
+}
+/* Style for the side navigation */
+.sidenav {
+  height: 100%; /* Full-height */
+  width: 300px; /* Set the width of the side navigation */
+  position: fixed; /* Fixed position */
+  z-index: 100; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0; /* Stay on the left */
+  background-color: var(--purple); /* Background color */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px; /* Place content 20px from the top */
+  
+}
+/* Style for the links inside the side navigation */
+.sidenav a {
+  padding: 6px 8px 6px 16px; /* Padding */
+  text-decoration-style: double;/* Remove underline */
+  font-size: 25px; /* Increase font size */
+  color: #9136db; /* Link color */
+  display:ruby-base; /* Make the links appear below each other */
+  margin-left: 10%;
+}
+/* Change color on hover */
+.sidenav a:hover {
+  color: #e0cbf2;   /* brighter pastel pink‑purple */
+}
+.sidenav a:visited {
+  color: #9136db;   /* slightly deeper shade */
+}
+.sidenav a:active {
+  color: #e0cbf2;   /* soft pink flash */
+}
+.sidenav a:hover {
+  transform: translateX(-10px);
+  color: #e0cbf2;
+}
+.sidenav a {
+  transition: transform 0.2s ease;
+  display: block; /* ensures transform behaves correctly */
+}
+/* Style for the main content */
+.main {
+  margin-left: 300px; /* Same as the width of the sidenav */
+  padding: 0px 10px; /* Some padding */
+} 
+/*on smaller screens, where the height of the sidenav is 100% instead of 100vh, remove the left margin of the main content to prevent it from being hidden behind the sidenav*/
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  .main {margin-left: 0;}
+}
+.dark-theme .sidenav {
+  background-color: var(--black); /* Dark background for sidenav */
+}
+.vline {
+  width: 100px;
+  height: 100px;
+ color: #000000;
+}
+
+
+.vertical-divider {
+  height: 100px;
+  width: 1%;
+  margin: 14px 0;        /* gap above and below */
+  background-color:var(--black);   /* light mode line */
+  opacity: 0.6;              /* slightly transparent */
+}
+
+/* Dark mode version */
+.dark-mode .vertical-divider {
+color: #444;  /* darker line for dark mode */
+  opacity: 0.7;
+}
+#name1 {
+    font-size: 29px;
+    font-family:Arial, Helvetica, sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-break: 0.5;
+    margin-left: 15%;
+  }
+#name2 {
+    font-size: 26px;
+    font-family:'Times New Roman', Times, serif;
+    line-height: 0.009;
+    color: #9136db;
+    margin-left: 15%;
+}
+.fixed-vertical {
+  border-left: 1px solid rgb(0, 0, 0);
+  height: 1230px;
+  position: fixed;
+  left: 405px;
+  margin-left: -105px;
+  top: 10px;
+  bottom: 10px;
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+.dark-theme .fixed-vertical {
+    border-left: 2.5px solid rgb(255, 255, 255);
+   height: 1230px;
+  position: fixed;
+  left: 405px;
+  margin-left: -105px;
+  top: 10px;
+  bottom: 10px;
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+.email-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:#a83dff; /* purple accent */
+  color: #fefdfe;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.email-btn:hover {
+  background-color: #a83dff; /* darker purple on hover */
+  transform: translateY(-2px);
+}
+#name3 {
+    font-size: 75px;
+    font-family:Arial, Helvetica, sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 0.5;
+    text-align: left;
+}
+
+#name4 {
+    font-size: 65px;
+    font-family:'Times New Roman', Times, serif;
+    line-height: 0.009;
+    text-align: left;
+    color: #9136db;
+}
+.dark-theme #name4 {
+    color: #be79f7;
+}
+.dark-theme #name2 {
+    color: #be79f7;
+}
+.darktheme .sidenav a{
+  color: #be79f7;
+}
+.darktheme .sidenav a:visited {
+  color: #cf9ef7;
+}
+.darktheme .sidenav a:active {
+  color: #be79f7;
+}
+.darktheme .sidenav a:hover {
+  color: #c993f6;
+}
+.avatar-text {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #9B5CFF;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+  box-shadow: 0 0 12px rgba(155, 92, 255, 0.5);
+  margin-left: 24%;
+}
+#student {
+    font-size: 20px;
+    margin-left: 13%;
+    opacity: 0.6;
+    line-height: 0.009;
+}
+.site-container {
+  width: 1000px;          /* choose the size you want */
+  margin: fixed;         /* centers the site */
+  background: inherit;    /* keeps your theme working */
+}
+body {
+  min-width: 199px;
+}
+.change {
+    transition: transform 0.2s ease;
+    display: block; 
+    font-size: 25px; /* Increase font size */
+    color: #9136db; /* Link color */
+}
+.chat-container {
+    width: 450px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.dark-theme .chat-container {
+    background: #1a1a1a;
+}
+
+.chat-header {
+    background: #a83dff;
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+}
+
+.chat-box {
+    height: 420px;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.bot-message, .user-message {
+    padding: 10px 14px;
+    margin: 10px 0;
+    border-radius: 12px;
+    max-width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bot-message {
+    background: #f7f0fd;
+    align-self: flex-start;
+}
+
+.dark-theme .bot-message {
+    background: #3a2a4f;
+    color: white;
+}
+
+.user-message {
+    background: #d1ffd6;
+    align-self: flex-end;
+}
+
+.dark-theme .user-message {
+    background: #2f4f2f;
+    color: white;
+}
+
+.input-area {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    outline: none;
+}
+
+button {
+    padding: 12px 20px;
+    background: #a83dff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
